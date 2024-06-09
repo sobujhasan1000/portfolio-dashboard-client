@@ -21,8 +21,8 @@ const SkillAdd: React.FC = () => {
       setPercentage(0);
       setError("");
     } catch (error) {
-      console.error("Error:", error.message);
-      setError(error.message);
+      console.error("Error:", error);
+      setError("error");
     }
   };
 
