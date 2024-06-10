@@ -9,7 +9,7 @@ export interface NewSkill {
 export async function addSkill(newSkill: NewSkill) {
   try {
     const response = await axios.post(
-      "http://localhost:5000/api/addSkill",
+      "https://pf-dashboard-server.vercel.app/api/addSkill",
       newSkill
     );
     return response.data;
