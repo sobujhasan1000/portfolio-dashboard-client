@@ -1,16 +1,16 @@
 import axios from "axios";
 
-export interface NewSkill {
-  name: string;
-  image: string;
-  percentage: number;
+export interface Newblog {
+  heading: string;
+  title: string;
+  details: string;
 }
 
-export async function addSkill(newSkill: NewSkill) {
+export async function addSblog(newblog: Newblog) {
   try {
     const response = await axios.post(
-      "https://pf-dashboard-server.vercel.app/api/addskill",
-      newSkill
+      "https://pf-dashboard-server.vercel.app/api/addblog",
+      newblog
     );
     return response.data;
   } catch (error) {

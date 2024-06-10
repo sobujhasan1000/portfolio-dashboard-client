@@ -1,9 +1,10 @@
+import AddBlog from "@/components/addblog/AddBlog";
 import React from "react";
 
 const AddBlogs = () => {
   return (
     <div>
-      <h1> add blogs</h1>
+      <AddBlog />
     </div>
   );
 };
